@@ -1,5 +1,5 @@
 // import React from 'react'
-import {Environment, Float, OrbitControls, useGLTF} from '@react-three/drei'
+import {Float, OrbitControls, useGLTF} from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import {useEffect} from "react";
 import * as THREE from 'three';
@@ -22,7 +22,6 @@ const TechIcon = ({ model }) => {
         <Canvas>
             <ambientLight intensity={0.3} />
             <directionalLight position={[5,5,5]} intensity={1} />
-            <Environment preset="city" />
 
             <OrbitControls enableZoom={false} />
 
